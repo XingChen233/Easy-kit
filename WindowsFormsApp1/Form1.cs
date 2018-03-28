@@ -68,7 +68,7 @@ namespace WindowsFormsApp1
 
         private void button6_Click(object sender, EventArgs e)
         {
-            File.WriteAllText(textBox6.Text+@"\New.txt", textBox7.Text);
+            File.WriteAllText(textBox6.Text+@"\"+textBox9.Text+".txt", textBox7.Text);
         }
 
         private void textBox8_TextChanged(object sender, EventArgs e)
@@ -79,6 +79,34 @@ namespace WindowsFormsApp1
         private void Form1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            File.Encrypt(textBox10.Text);
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            File.Decrypt(textBox11.Text);
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog fileDialog = new OpenFileDialog();
+            fileDialog.Multiselect = true;
+            fileDialog.Title = "请选择文件";
+            fileDialog.Filter = "所有文件(*.*)|*.*"; if (fileDialog.ShowDialog() == DialogResult.OK)
+            {
+                string file = fileDialog.FileName;
+                label10.Text = file;
+            }
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            Form2 a = new Form2();
+            a.Show();
         }
     }
 }
