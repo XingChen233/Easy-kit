@@ -100,6 +100,7 @@ namespace WindowsFormsApp1
             {
                 string file = fileDialog.FileName;
                 label10.Text = file;
+               
             }
         }
 
@@ -107,6 +108,21 @@ namespace WindowsFormsApp1
         {
             Form2 a = new Form2();
             a.Show();
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            File.WriteAllText(textBox12.Text+textBox13.Text, label10.Text);
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox12_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

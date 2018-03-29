@@ -53,25 +53,31 @@
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.button6 = new System.Windows.Forms.Button();
-            this.label9 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.button7 = new System.Windows.Forms.Button();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.groupBox7 = new System.Windows.Forms.GroupBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.button8 = new System.Windows.Forms.Button();
-            this.groupBox8 = new System.Windows.Forms.GroupBox();
-            this.button9 = new System.Windows.Forms.Button();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
+            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.button7 = new System.Windows.Forms.Button();
+            this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.button8 = new System.Windows.Forms.Button();
+            this.label11 = new System.Windows.Forms.Label();
+            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.button11 = new System.Windows.Forms.Button();
+            this.label10 = new System.Windows.Forms.Label();
+            this.button9 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
+            this.groupBox9 = new System.Windows.Forms.GroupBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -244,15 +250,16 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(3, 47);
+            this.label5.Location = new System.Drawing.Point(11, 44);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(29, 12);
             this.label5.TabIndex = 10;
             this.label5.Text = "内容";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(50, 41);
+            this.textBox5.Location = new System.Drawing.Point(50, 14);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(144, 21);
             this.textBox5.TabIndex = 9;
@@ -261,7 +268,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label4.Location = new System.Drawing.Point(3, 17);
+            this.label4.Location = new System.Drawing.Point(9, 20);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(29, 12);
             this.label4.TabIndex = 8;
@@ -279,7 +286,7 @@
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(50, 14);
+            this.textBox4.Location = new System.Drawing.Point(50, 41);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(144, 21);
             this.textBox4.TabIndex = 6;
@@ -304,6 +311,22 @@
             this.groupBox5.TabIndex = 6;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "创建TXT";
+            // 
+            // textBox9
+            // 
+            this.textBox9.Location = new System.Drawing.Point(45, 74);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(144, 21);
+            this.textBox9.TabIndex = 6;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(10, 77);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(29, 12);
+            this.label9.TabIndex = 5;
+            this.label9.Text = "名称";
             // 
             // label7
             // 
@@ -347,22 +370,6 @@
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(10, 77);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(29, 12);
-            this.label9.TabIndex = 5;
-            this.label9.Text = "名称";
-            // 
-            // textBox9
-            // 
-            this.textBox9.Location = new System.Drawing.Point(45, 74);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(144, 21);
-            this.textBox9.TabIndex = 6;
-            // 
             // groupBox6
             // 
             this.groupBox6.Controls.Add(this.label12);
@@ -375,6 +382,22 @@
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "加密";
             // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(6, 27);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(65, 12);
+            this.label12.TabIndex = 3;
+            this.label12.Text = "文件完整名";
+            // 
+            // textBox10
+            // 
+            this.textBox10.Location = new System.Drawing.Point(77, 24);
+            this.textBox10.Name = "textBox10";
+            this.textBox10.Size = new System.Drawing.Size(100, 21);
+            this.textBox10.TabIndex = 1;
+            // 
             // button7
             // 
             this.button7.Location = new System.Drawing.Point(6, 71);
@@ -384,13 +407,6 @@
             this.button7.Text = "加密";
             this.button7.UseVisualStyleBackColor = true;
             this.button7.Click += new System.EventHandler(this.button7_Click);
-            // 
-            // textBox10
-            // 
-            this.textBox10.Location = new System.Drawing.Point(77, 24);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(100, 21);
-            this.textBox10.TabIndex = 1;
             // 
             // groupBox7
             // 
@@ -404,13 +420,6 @@
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "解密";
             // 
-            // textBox11
-            // 
-            this.textBox11.Location = new System.Drawing.Point(77, 20);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(290, 21);
-            this.textBox11.TabIndex = 9;
-            // 
             // button8
             // 
             this.button8.Location = new System.Drawing.Point(6, 71);
@@ -421,36 +430,6 @@
             this.button8.UseVisualStyleBackColor = true;
             this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
-            // groupBox8
-            // 
-            this.groupBox8.Controls.Add(this.label10);
-            this.groupBox8.Controls.Add(this.button9);
-            this.groupBox8.Location = new System.Drawing.Point(430, 112);
-            this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Size = new System.Drawing.Size(367, 100);
-            this.groupBox8.TabIndex = 11;
-            this.groupBox8.TabStop = false;
-            this.groupBox8.Text = "获取文件完整名";
-            // 
-            // button9
-            // 
-            this.button9.Location = new System.Drawing.Point(0, 71);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(75, 23);
-            this.button9.TabIndex = 0;
-            this.button9.Text = "获取";
-            this.button9.UseVisualStyleBackColor = true;
-            this.button9.Click += new System.EventHandler(this.button9_Click);
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(6, 23);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(137, 12);
-            this.label10.TabIndex = 1;
-            this.label10.Text = "获取成功后将在此处显示";
-            // 
             // label11
             // 
             this.label11.AutoSize = true;
@@ -460,14 +439,90 @@
             this.label11.TabIndex = 2;
             this.label11.Text = "文件完整名";
             // 
-            // label12
+            // textBox11
             // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(6, 27);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(65, 12);
-            this.label12.TabIndex = 3;
-            this.label12.Text = "文件完整名";
+            this.textBox11.Location = new System.Drawing.Point(77, 20);
+            this.textBox11.Name = "textBox11";
+            this.textBox11.Size = new System.Drawing.Size(290, 21);
+            this.textBox11.TabIndex = 9;
+            // 
+            // groupBox8
+            // 
+            this.groupBox8.Controls.Add(this.label14);
+            this.groupBox8.Controls.Add(this.label13);
+            this.groupBox8.Controls.Add(this.textBox13);
+            this.groupBox8.Controls.Add(this.textBox12);
+            this.groupBox8.Controls.Add(this.button11);
+            this.groupBox8.Controls.Add(this.label10);
+            this.groupBox8.Controls.Add(this.button9);
+            this.groupBox8.Location = new System.Drawing.Point(430, 112);
+            this.groupBox8.Name = "groupBox8";
+            this.groupBox8.Size = new System.Drawing.Size(367, 134);
+            this.groupBox8.TabIndex = 11;
+            this.groupBox8.TabStop = false;
+            this.groupBox8.Text = "获取文件完整名";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(6, 77);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(35, 12);
+            this.label14.TabIndex = 17;
+            this.label14.Text = "名称 ";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(6, 50);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(29, 12);
+            this.label13.TabIndex = 16;
+            this.label13.Text = "地址";
+            // 
+            // textBox13
+            // 
+            this.textBox13.Location = new System.Drawing.Point(59, 74);
+            this.textBox13.Name = "textBox13";
+            this.textBox13.Size = new System.Drawing.Size(302, 21);
+            this.textBox13.TabIndex = 15;
+            // 
+            // textBox12
+            // 
+            this.textBox12.Location = new System.Drawing.Point(59, 44);
+            this.textBox12.Name = "textBox12";
+            this.textBox12.Size = new System.Drawing.Size(302, 21);
+            this.textBox12.TabIndex = 14;
+            this.textBox12.TextChanged += new System.EventHandler(this.textBox12_TextChanged);
+            // 
+            // button11
+            // 
+            this.button11.Location = new System.Drawing.Point(81, 103);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(75, 23);
+            this.button11.TabIndex = 13;
+            this.button11.Text = "写入";
+            this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(6, 23);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(365, 12);
+            this.label10.TabIndex = 1;
+            this.label10.Text = "获取成功后将在此处显示,按写入按钮来创建一个包含自此内容的TXT";
+            // 
+            // button9
+            // 
+            this.button9.Location = new System.Drawing.Point(0, 103);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(75, 23);
+            this.button9.TabIndex = 0;
+            this.button9.Text = "获取";
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // button10
             // 
@@ -479,11 +534,21 @@
             this.button10.UseVisualStyleBackColor = true;
             this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
+            // groupBox9
+            // 
+            this.groupBox9.Location = new System.Drawing.Point(438, 257);
+            this.groupBox9.Name = "groupBox9";
+            this.groupBox9.Size = new System.Drawing.Size(359, 100);
+            this.groupBox9.TabIndex = 13;
+            this.groupBox9.TabStop = false;
+            this.groupBox9.Text = "关于";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(809, 369);
+            this.Controls.Add(this.groupBox9);
             this.Controls.Add(this.button10);
             this.Controls.Add(this.groupBox8);
             this.Controls.Add(this.groupBox7);
@@ -561,6 +626,12 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.GroupBox groupBox9;
     }
 }
 
