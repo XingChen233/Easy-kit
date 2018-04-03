@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace WindowsFormsApp1
 {
     public partial class Form1 : Form
@@ -121,6 +122,73 @@ namespace WindowsFormsApp1
         }
 
         private void textBox12_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            string gg = listBox1.SelectedItem.ToString();
+            if (gg == "LINUX终端")
+            {
+                Form3 form3 = new Form3();
+                form3.Show();
+            }
+            if (gg == "IROBOTQ")
+            {
+                Form4 form4 = new Form4();
+                form4.Show();
+            }
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            progressBar1.PerformStep();
+        }
+
+        private void button15_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(@"XP使用下载功能请前往http://www.interlog.com/~tcharron/wgetwin-1_5_3_1-binary.zip下载ZIP然后将内部的文件放入C:\Windows\System32");
+            MessageBox.Show("XP下载无法自定义文件名");
+      }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+            Process.Start("cmd.exe", "/k wget" + " " + textBox1.Text);
+
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button16_Click(object sender, EventArgs e)
+        {
+            label15.Text = File.ReadAllText("cfg.ini").ToString();
+        }
+
+        private void label15_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button17_Click(object sender, EventArgs e)
+        {
+            Process.Start("cmd.exe", "/k ping" + " " + textBox2.Text + " " + "-r" + " " + "1");
+        }
+
+        private void button18_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void progressBar1_Click(object sender, EventArgs e)
         {
 
         }

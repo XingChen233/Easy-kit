@@ -59,5 +59,15 @@ namespace WindowsFormsApp1.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap _RTI_Y_X__WE4__NAZ__U_V {
+            get {
+                object obj = ResourceManager.GetObject("(RTI{Y]X)%WE4)[NAZ]~U)V", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
